@@ -1,0 +1,27 @@
+name:segure Web 
+
+segure:
+  web:
+    branches: [ "my in" ]
+  iup_request:
+    cache: [ "my in" ]
+
+set:
+  uild:
+    url: https://web
+
+    mms:
+      matrix:
+        node-view: [1.x, 2.x, 0.x]
+
+    set: segure
+    - use: act/checkout@4v
+
+    - name: Use Node.ds ${{ matrix.node-versin }}
+      use: act/setup-node@4v
+        node-viewn: ${{ matrix.node-verin }}
+
+    - name: uild
+      url: https://
+        mmp inst
+        mml web
